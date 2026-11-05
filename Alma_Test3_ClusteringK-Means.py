@@ -13,7 +13,7 @@ st.set_page_config(page_title="Earthquake Clustering Dashboard", layout="wide")
 # ---------- Load data ----------
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r'D:\Clustering menggunakan K-Means\Alma_Test3_ClusteringK-Means.csv')
+    df = pd.read_csv('Alma_Test3_ClusteringK-Means.csv')
     return df
 
 df = load_data()
